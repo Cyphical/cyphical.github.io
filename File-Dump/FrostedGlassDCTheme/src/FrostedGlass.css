@@ -10,6 +10,10 @@
  * @website https://gibbu.me/
 */
 
+h2 {
+ background-color: pink; 
+}
+
 /* @import url("https://gibbu.github.io/BetterDiscord-Themes/FrostedGlass/base.css"); */
 /* BlackBox tags */
 /* @import url('https://monstrousdev.github.io/themes/addons/user-tags.css'); */
