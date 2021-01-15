@@ -1,9 +1,11 @@
 
-
-
 html {
-    font-family: 'Nunito', sans-serif;
+    font-family: "Work Sans", sans-serif;
     height: 100%;
+    background: rgb(26, 26, 26);
+  }
+  ::selection {
+      background-color: #8aedffb9;
   }
   body {
     margin: 0px;
@@ -16,10 +18,10 @@ html {
     
   }
   .side-menu {
-    min-width: 250px;
-    width: 250px;
+    min-width: 200px;
+    width: 200px;
     float: left;
-    background: #32325d;
+    background: #1f1f1f;
     height: auto;
     min-height: 100%;
     margin-bottom: -5000px; /* any large number will do */
@@ -28,23 +30,25 @@ html {
   .topmenu{
     height: 45px;
     padding: 10px 0px 0px 10px;
-    background: #6772e5;
+    background: #2f2f2f;
     color: #e1e2fa;
   }
   .logo {
-    background: #3a3a63;
-    color: #ffffff;
-    font-size: 24px;
-    font-weight: bold;
+    background: #2a2a2a;
+    background: -webkit-linear-gradient(rgb(76, 240, 255), rgb(246, 118, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 32px;
     padding: 10px 0px 0px 10px;
     height: 45px;
+    font-family: "Ubuntu";
   }
   .main-section {
     height: 100%;
   }
   a {
     text-decoration: none;
-    color: #e1e2fa;
+    color: #ffffff;
   }
   .menu ul {
     list-style-type: none;
@@ -53,19 +57,19 @@ html {
   }
   .menu ul li a {
     font-size: 12px;
-    font-weight: 800;
     display: inline-block;
     padding-top: 10px;
     padding-bottom: 10px;
     width: 100%;
     margin-left: -5px;
     padding-left: 10px;
+    font-size: 25px;
   }
   .menu ul li a:hover {
-    background: #262646;
-    border-left: solid 5px #6a75eb;
+    background: #ffffff1e;
+    border-left: solid 3px #ffffff;
     margin-left: -10px;
-    width: 98%;
+    width: 99%;
   }
   .menu ul li ul {
     padding-left:0px; 
