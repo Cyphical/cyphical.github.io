@@ -1,0 +1,27 @@
+.bd-scrollerWrap {
+    display: flex;
+    width: 100%;
+
+    .bd-scroller {
+        @include scrollbar;
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    &.bd-dark {
+        .bd-scroller {
+            &::-webkit-scrollbar-thumb {
+                background-color: #36393e;
+                border-color: transparent;
+            }
+
+            &::-webkit-scrollbar-track-piece {
+                background-color: #2b2e31;
+                border-color: transparent;
+            }
+        }
+    }
+}

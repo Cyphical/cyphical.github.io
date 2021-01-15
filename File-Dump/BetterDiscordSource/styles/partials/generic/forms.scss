@@ -1,0 +1,98 @@
+.bd-formHeader {
+    margin: 15px 0 10px;
+    color: rgba(255, 255, 255, .15);
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    flex-shrink: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+    display: flex;
+
+    .bd-formHeaderText {
+        flex: 1 1 auto;
+    }
+
+    .bd-formHeaderButton {
+        flex: 0 0;
+        margin-left: 5px;
+
+        svg {
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+            fill: #ccc;
+        }
+    }
+
+    &:hover {
+        .bd-formHeaderButton {
+            svg {
+                fill: #fff;
+            }
+        }
+    }
+}
+
+.bd-formItem {
+    h5 {
+        color: #b9bbbe;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 12px;
+    }
+}
+
+.bd-formDivider {
+    height: 1px;
+    margin: 15px 0;
+    background: hsla(218, 5%, 47%, .3);
+    transition: background-color .2s ease;
+
+    .bd-formItemChanged > & {
+        background: $colok;
+    }
+}
+
+.bd-formWarning {
+    display: flex;
+    margin-top: 20px;
+    background: #d84040;
+    border: 1px solid #b30b0b;
+    opacity: .8;
+    border-radius: 4px;
+    padding: 10px;
+
+    .bd-text {
+        display: flex;
+        color: #fff;
+        font-weight: 700;
+        align-items: center;
+        flex-grow: 1;
+    }
+
+    .bd-formButton {
+        margin: 0;
+        align-self: flex-end;
+        background: #c42929;
+
+        &:hover {
+            background: darken(#c42929, 2%);
+        }
+    }
+}
+
+.bd-formButton {
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 4px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    user-select: none;
+}

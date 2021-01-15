@@ -1,0 +1,101 @@
+.bd-formDropdown {
+    h3 + .bd-dropdown {
+        width: 180px;
+        margin-left: 15px;
+    }
+
+    .bd-formItemFullwidth & {
+        .bd-dropdown {
+            margin-top: 10px;
+        }
+    }
+}
+
+.bd-dropdown {
+    position: relative;
+    width: 100%;
+
+    .bd-dropdownCurrent {
+        color: #f6f6f7;
+        background: rgba(0, 0, 0, .1);
+        border: 1px solid rgba(0, 0, 0, .3);
+        border-radius: 3px;
+        padding: 11px;
+        cursor: default;
+        outline: none;
+        transition: border .15s ease;
+        box-sizing: border-box;
+        display: flex;
+
+        .bd-dropdownText {
+            flex: 1 1 auto;
+        }
+
+        .bd-dropdownArrowWrap {
+            flex: 0 0 auto;
+            margin-left: 10px;
+
+            .bd-dropdownArrow {
+                border-color: rgb(153, 153, 153) transparent transparent;
+                border-style: solid;
+                border-width: 5px 5px 2.5px;
+                display: inline-block;
+                transition: transform .15s ease;
+                transform: none;
+            }
+        }
+
+        &:hover {
+            border-color: #040405;
+
+            .bd-dropdownArrowWrap {
+                &.bd-dropdownArrow {
+                    border-color: #f6f6f7 transparent transparent;
+                }
+            }
+        }
+    }
+
+    &.bd-active {
+        .bd-dropdownCurrent {
+            border-color: #040405;
+        }
+
+        .bd-dropdownArrowWrap {
+            .bd-dropdownArrow {
+                transform: rotateX(180deg) translateY(2px);
+                border-color: #f6f6f7 transparent transparent;
+            }
+        }
+    }
+
+    .bd-dropdownOptions {
+        position: absolute;
+        z-index: 5;
+        top: calc(100% - 2.5px);
+        width: 100%;
+        max-height: 180px;
+        box-sizing: border-box;
+        background-color: #303237;
+        border: 1px solid #202225;
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+        overflow-y: scroll;
+
+        .bd-dropdownOption {
+            color: #fff;
+            padding: 11px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: rgba(0, 0, 0, .1);
+            }
+
+            &.bd-dropdownOptionSelected {
+                background-color: rgba(0, 0, 0, .2);
+            }
+        }
+
+        @include scrollbar;
+    }
+}

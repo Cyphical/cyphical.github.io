@@ -1,0 +1,32 @@
+.bd-contentColumn {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex-grow: 1;
+    backface-visibility: hidden;
+
+    > * {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+
+        &.bd-contentcolumn-enter-active,
+        &.bd-contentcolumn-leave-active {
+            transition: opacity .4s ease;
+        }
+
+        &.bd-contentcolumn-enter-to {
+            opacity: 1;
+        }
+
+        &.bd-contentcolumn-leave-to {
+            opacity: 0;
+        }
+
+        &.bd-contentcolumn-leave-active {
+            position: absolute;
+            width: 590px;
+            pointer-events: none;
+        }
+    }
+}

@@ -1,0 +1,133 @@
+.bd-sidebarRegion {
+    .bd-settingswrap {
+        display: flex;
+        height: 100%;
+        -webkit-box-flex: 1;
+        flex: 1;
+        min-height: 1px;
+        box-sizing: border-box;
+        padding: 90px 15px 0;
+        margin-bottom: 5px;
+    }
+}
+
+.bd-contentRegion {
+    .bd-settingswrap {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+
+        > .bd-scrollerWrap {
+            flex-grow: 1;
+
+            > .bd-scroller {
+                overflow-y: scroll;
+            }
+        }
+
+        .bd-settings & {
+            .platform-darwin & { // sass-lint:disable-line class-name-format
+                padding-top: 22px;
+            }
+        }
+
+        .bd-settingswrapHeader {
+            outline: 0;
+            padding: 0;
+            margin: 30px 20px 20px;
+            vertical-align: baseline;
+            display: flex;
+            flex: 0 0 auto;
+
+            .bd-settingswrapHeaderText {
+                color: $colbdgreen;
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: 16px;
+                flex: 1 1 auto;
+            }
+        }
+
+        .bd-settingswrapItem {
+            .bd-settingswrapButtonBig {
+                width: 150px;
+                height: 50px;
+                border-radius: 5px;
+                margin-bottom: 20px;
+            }
+
+            .bd-settingswrapItemDesc {
+                color: #72767d;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 20px;
+            }
+
+            .bd-settingswrapInfobox {
+                display: flex;
+                align-items: stretch;
+                background: rgba(32, 34, 37, .6);
+                border-color: #202225;
+                padding: 20px;
+                border-radius: 5px;
+                border-style: solid;
+                border-width: 1px;
+                position: relative;
+                margin-bottom: 20px;
+
+                .bd-settingswrapInfoboxChild {
+                    background-size: 100% 100%;
+
+                    .bd-wrapper {
+                        margin-bottom: 20px;
+
+                        h5 {
+                            color: hsla(210, 3%, 87%, .3);
+                            letter-spacing: .5px;
+                            font-size: 12px;
+                            text-transform: uppercase;
+                            font-weight: 600;
+                            line-height: 16px;
+                        }
+
+                        > span {
+                            color: #b9bbbe;
+                            font-size: 12px;
+                            line-height: 16px;
+                            font-weight: 600;
+                            margin-left: 5px;
+                            margin-right: 5px;
+                        }
+
+                        > div {
+                            color: #b9bbbe;
+
+                            > span {
+                                color: #b9bbbe;
+                                opacity: .5;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .bd-settingswrapSubheader {
+            color: #f6f6f7;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .bd-settingswrapContents {
+            padding: 0 0 0 20px;
+        }
+
+        .bd-scroller {
+            .bd-settingswrapContents {
+                margin-bottom: 84px;
+                padding: 0 20px;
+            }
+        }
+    }
+}

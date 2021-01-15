@@ -1,0 +1,104 @@
+.bd-card {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background: transparent;
+    border-bottom: 1px solid rgba(114, 118, 126, .3);
+    min-height: 150px;
+    color: #b9bbbe;
+    margin-top: 20px;
+    padding-bottom: 20px;
+
+    .bd-cardHeader {
+        margin-bottom: 15px;
+        display: flex;
+        flex-grow: 0;
+        font-weight: 700;
+        align-items: center;
+
+        .bd-cardIcon {
+            width: 30px;
+            height: 30px;
+            background-size: cover;
+        }
+
+        > span {
+            margin-left: 10px;
+        }
+
+        svg {
+            fill: #afb1b4;
+        }
+    }
+
+    .bd-cardBody {
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+
+        .bd-cardDescription {
+            flex-grow: 1;
+            min-height: 60px;
+            color: #8a8c90;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 5px;
+            white-space: pre-wrap;
+        }
+
+        .bd-cardFooter {
+            display: flex;
+            align-items: flex-end;
+
+            .bd-cardExtra {
+                color: rgba(255, 255, 255, .15);
+                font-size: 10px;
+                font-weight: 700;
+                flex-grow: 1;
+            }
+
+            .bd-controls {
+                margin-left: 15px;
+
+                .bd-buttonGroup {
+                    .bd-button {
+                        fill: #fff;
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+            }
+        }
+    }
+
+    .bd-switchWrapper {
+        width: 40px;
+        height: 20px;
+
+        .bd-switch {
+            &::before {
+                width: 14px;
+                height: 14px;
+            }
+        }
+    }
+}
+
+.bd-contentAuthor {
+    .bd-contentAuthorLink {
+        cursor: pointer;
+
+        &:hover {
+            color: $coldimwhite;
+        }
+    }
+}
+
+.bd-contentAuthorLinks {
+    padding: 3px 5px;
+
+    .bd-popoverInner > :first-child {
+        display: flex;
+        flex-direction: row;
+    }
+}
