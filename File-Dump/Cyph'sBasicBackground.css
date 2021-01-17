@@ -7876,5 +7876,6 @@ html:only-child > head + body > div#app-mount.appMount-3lHmkl > div.app-1q1i1E >
 }
 
 .wrapper-1Rf91z .da-wrapper .guilds-1SWlCJ .da-guilds {
-    opacity: 0.75;
+	background-color: black;
+	opacity: 0.75;
 }
